@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<!-- 
+  HTML5 dokument annab brauserile teada, et tegemist on HTML5 veebilehega.
+-->
+
+<html lang="et">
+<!-- 
+  Veebilehe põhielementlang="et" tähendab, et lehe keel on eesti keel.
+-->
+
+<head>
+  <!-- 
+    HEAD osa sisaldab metaandmeid ja ühendusi failidega
+  -->
+
+  <meta charset="UTF-8">
+  <!-- 
+    Määrab tähemärkide kodeeringu UTF-8 peale
+  -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 
+    Muudab veebilehe telos normaalseks
+  -->
+
+  <title>Tehisintellekt</title>
+  <!-- 
+    Lehe pealkiri
+  -->
+
+  <link rel="stylesheet" href="style.css">
+  <!-- 
+    Ühendab HTML faili välise CSS failiga
+  -->
+
+</head>
+
+<body>
+<!-- 
+  BODY sisaldab kogu nähtavat veebilehe sisu
+-->
+
+  <!--NAVIGATSIOONIRIBA -->
+  <nav>
+
+    <!--Veebilehe nimi-->
+    <a href="#avaleht" class="nav-logo">AI ja Tulevik</a>
+
+    <!-- 
+      Hamburgermenüü nupp mobiilivaates
+      Koosneb kolmest joonest
+      JS avab/sulgeb menüü
+    -->
+    <button class="hamburger" id="hamburger" aria-label="Ava menüü">
+
+      <!-- Ülemine joon -->
+      <span></span>
+
+      <!-- Keskmine joon -->
+      <span></span>
+
+      <!-- Alumine joon -->
+      <span></span>
+
+    </button>
+
+    <!-- 
+      Navigatsioonilingid
+      Mobiilis peidetud kuni menyyd vajutatakse
+    -->
+    <div class="nav-lingid" id="nav-lingid">
+
+      <!-- Link hero sektsiooni -->
+      <a href="#avaleht">Avaleht</a>
+
+      <!-- Link tutvustuse sektsiooni -->
+      <a href="#tutvustus">Mis on AI?</a>
+
+      <!-- Link galerii sektsiooni -->
+      <a href="#galerii">Läbimurded</a>
+
+      <!-- Link video sektsiooni -->
+      <a href="#video">Video</a>
+
+      <!-- Link kontaktide sektsiooni -->
+      <a href="#kontakt">Lingid</a>
+
+    </div>
+
+  </nav>
+
+  <!-- hero section -->
+
+  <section id="avaleht" class="hero">
+
+    <!-- Hero sisu -->
+    <div class="hero-sisu">
+
+      <!-- Suur pealkiri -->
+      <h1>Tehisintellekt</h1>
+
+      <!-- Alapealkiri -->
+      <p>Olevik ja tulevik</p>
+
+      <!-- Nupp tutvustuse sektsiooni -->
+      <a href="#tutvustus" class="nupp">Tutvu lähemalt</a>
+
+    </div>
+
+  </section>
+
+  <!--Abou section-->
+  <section id="tutvustus" class="tutvustus">
+
+    <!-- Sektsiooni pealkiri -->
+    <h2>Mis on tehisintellekt?</h2>
+
+    <!-- 
+      Kõik info-plokid asuvad siin
+      CSS flexbox paigutab need ritta või üksteise alla.
+    -->
+    <div class="plokid">
+
+      <!-- ESIMENE INFO -->
+      <div class="plokk">
+
+        <!-- pealkiri -->
+        <h3>Definitsioon</h3>
+
+        <!-- tekst -->
+        <p>
+          AI on arvutiteaduse haru, mille eesmärk 
+          on luua süsteeme, mis suudavad täita ülesandeid, 
+          mis tavaliselt nõuavad inimlikku intelligentsust – 
+          näiteks kõneleda, õppida ja probleeme lahendada.
+        </p>
+
+      </div>
+
+      <!-- TEINE INFO -->
+      <div class="plokk">
+
+        <h3>Masinõpe</h3>
+
+        <p>
+          Masinõpe on AI valdkond, kus süsteemid õpivad 
+          andmetest iseseisvalt, ilma et neile iga sammu jaoks 
+          täpseid juhiseid antaks. Tänapäeva kõige võimsamad 
+          AI mudelid põhinevad just sellel
+        </p>
+
+      </div>
+
+      <!--KOLMAS INFO -->
+      <div class="plokk">
+
+        <h3>Mõju ühiskonnale</h3>
+
+        <p>
+          AI mõjutab juba praegu meditsiini, haridust, 
+          transporti ja kunsti. ai areng 
+          toob suuri võimalusi ja väljakutseid, 
+          millega ühiskond alles õpib toime tulema.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALERII SEKTSIOON -->
+  <section id="galerii" class="galerii">
+
+    <!-- pealkiri -->
+    <h2>Olulised läbimurded</h2>
+
+    <!-- Pildid -->
+    <div class="pildid">
+
+      <!-- ESIMENE PILDIKAART -->
+      <div class="pilt-kaart">
+
+        <!-- Pilt -->
+        <img src="ibm.jpg">
+
+        <!-- Pildi kirjeldus -->
+        <p>
+          <strong>1997</strong> – Deep Blue võitis 
+          male maailmameistrilt Kasparovilt
+        </p>
+
+      </div>
+
+      <!--TEINE PILDIKAART-->
+      <div class="pilt-kaart">
+
+        <img 
+          src="symbol.avif" 
+          alt="Tehisintellekti sümbol – aju ja vooluringid"
+        >
+
+        <p>
+          <strong>2012</strong> – Sügavõpe (deep learning) 
+          murrab läbi pildituvastusel
+        </p>
+
+      </div>
+
+      <!--KOLMAS PILDIKAART -->
+      <div class="pilt-kaart">
+
+        <img 
+          src="chatgpt.jpg" 
+          alt="ChatGPT logo – OpenAI vestlusrobot"
+        >
+
+        <p>
+          <strong>2022</strong> – ChatGPT muudab AI 
+          kättesaadavaks kõigile
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- VIDEO SEKTSIOON-->
+  <section id="video" class="video-plokk">
+
+    <!-- pealkiri -->
+    <h2>Vaata lähemalt</h2>
+
+    <!-- 
+      Video ymbris
+      CSS teeb video responsiivseks.
+    -->
+    <div class="video-ümbris">
+
+      <!-- 
+        YouTube iframe video
+        allowfullscreen lubab täisekraani
+      -->
+      <iframe
+        src="https://www.youtube.com/embed/ad79nYk2keg"
+        title="Mis on tehisintellekt? – selgitav video"
+        allowfullscreen>
+      </iframe>
+
+    </div>
+
+  </section>
+
+  <!-- KONTAKTIDE / LINKIDE SEKTSIOON -->
+  <section id="kontakt" class="kontakt">
+
+    <!--pealkiri -->
+    <h2>Loe edasi</h2>
+
+    <!-- Lühike kirjeldus -->
+    <p>Tehisintellektiga seotud usaldusväärsed allikad:</p>
+
+    <!-- Linkide nimekiri -->
+    <ul>
+
+      <li>
+        <a 
+          href="https://www.anthropic.com" 
+          target="_blank" 
+          class="viide-nupp"
+        >
+          Anthropic – Claude'i loojad
+        </a>
+      </li>
+
+      <li>
+        <a 
+          href="https://et.wikipedia.org/wiki/Tehisintellekt" 
+          target="_blank" 
+          class="viide-nupp"
+        >
+          Wikipedia – Tehisintellekt (eesti keeles)
+        </a>
+      </li>
+
+      <li>
+        <a 
+          href="https://openai.com" 
+          target="_blank" 
+          class="viide-nupp"
+        >
+          OpenAI – ChatGPT loojad
+        </a>
+      </li>
+
+    </ul>
+
+    <!-- Tagasi üles nupp -->
+    <a href="#avaleht" class="nupp">Tagasi üles ↑</a>
+
+  </section>
+
+  <!-- =======================================================
+       FOOTER / JALUS
+       ======================================================= -->
+  <footer>
+
+    <p>
+      Lõputöö. Allikad: Vikipeedia, Anthropic, OpenAI.
+    </p>
+
+  </footer>
+
+  <!-- JS Hamburgermenyy avamine/sulgemine -->
+  <script>
+
+    /*HTML elemendid id järgi*/
+    const hamburger = document.getElementById('hamburger');
+    const navLingid = document.getElementById('nav-lingid');
+
+    /*Kui hamburgerit klikitakse ava/sulge menyy uuda hamburger X-iks*/
+    hamburger.addEventListener('click', () => {
+
+      // Lisab/eemaldab klassi "avatud"
+      navLingid.classList.toggle('avatud');
+
+      // Lisab/eemaldab klassi "aktiivne"
+      hamburger.classList.toggle('aktiivne');
+
+    });
+
+    /*Kui kasutaja vajutab menüülingile sulge menüü taasta hamburgeri tavaline välimus*/
+    navLingid.querySelectorAll('a').forEach(link => {
+
+      link.addEventListener('click', () => {
+
+        // Sulgeb menüü
+        navLingid.classList.remove('avatud');
+
+        // Taastab hamburgeri
+        hamburger.classList.remove('aktiivne');
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
